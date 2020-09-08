@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body class="container">
+    
+    <h1 class="mt-4">Desafio de ordenação</h1>
+
+    <div class="mt-5">
+      <label for='js-search-input'>Buscar nos campos: </label>
+      <input id='js-search-input' type='text' onkeyup='searchInFields();' autofocus/>
+   
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th onclick='sortBy("name");'>
+              Nome
+            </th>
+            <th onclick='sortBy("power");'>
+              Poder
+            </th>
+            <th onclick='sortBy("rank");'>
+              Rank
+            </th>
+          </tr>
+        </thead>
+  
+        <tbody id="js-content"></tbody>
+      </table>
+    </div>
+  
+    <script src="./logic.js"></script>
+  </body>
+</html>
